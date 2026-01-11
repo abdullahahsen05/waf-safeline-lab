@@ -41,19 +41,9 @@ This project demonstrates the deployment of **SafeLine WAF** (by Chaitin) to pro
 ![Blocked Request](WAF-ScreenShots/sqli_blocked.png)
 *(The custom 403 error page served by SafeLine when an attack is detected)*
 
-### 3. Incident Logs
-![Attack Logs](WAF-ScreenShots/attack_logs.png)
-*(Detailed log showing the attacker IP, timestamp, and the specific SQL payload caught)*### 1. WAF Dashboard & Traffic Stats
-![WAF Dashboard](screenshots/waf_dashboard.png)
-*(Overview of legitimate vs. blocked traffic)*
-
-### 2. SQL Injection Blocked Page
-![Blocked Request](screenshots/sqli_blocked.png)
-*(The custom 403 error page served by SafeLine when an attack is detected)*
-
-### 3. Incident Logs
-![Attack Logs](screenshots/attack_logs.png)
-*(Detailed log showing the attacker IP, timestamp, and the specific SQL payload caught)*
+### 3. WAF Access Control (Authentication)
+![Authentication Challenge](WAF-ScreenShots/waf_authentication.png)
+*(Implemented an additional security layer where SafeLine WAF intercepts requests and enforces authentication before routing traffic to the backend server)*
 
 ## 🚀 Key Takeaways
 * Understanding **Reverse Proxy** deployment for WAFs.
