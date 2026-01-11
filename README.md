@@ -31,9 +31,19 @@ This project demonstrates the deployment of **SafeLine WAF** (by Chaitin) to pro
 ### Scenario 2: IP Blacklisting
 * **Defense:** Created a custom rule to strictly **DENY** traffic from the Kali Linux IP (192.168.0.206).
 * **Outcome:** All requests were immediately dropped, effectively isolating the threat actor.
-
+* 
 ## 📸 Proof of Concept
 ### 1. WAF Dashboard & Traffic Stats
+![WAF Dashboard](WAF-ScreenShots/waf_dashboard.png)
+*(Overview of legitimate vs. blocked traffic)*
+
+### 2. SQL Injection Blocked Page
+![Blocked Request](WAF-ScreenShots/sqli_blocked.png)
+*(The custom 403 error page served by SafeLine when an attack is detected)*
+
+### 3. Incident Logs
+![Attack Logs](WAF-ScreenShots/attack_logs.png)
+*(Detailed log showing the attacker IP, timestamp, and the specific SQL payload caught)*### 1. WAF Dashboard & Traffic Stats
 ![WAF Dashboard](screenshots/waf_dashboard.png)
 *(Overview of legitimate vs. blocked traffic)*
 
